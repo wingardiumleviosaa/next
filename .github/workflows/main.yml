@@ -2,7 +2,7 @@ name: Algolia Upload Records
 on:
   [push] #推送时执行
 jobs:
-  algolia:
+  algolia-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,8 +15,8 @@ jobs:
       #    ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
       #    INDEX_NAME: ${{secrets.INDEX_NAME}}
       #    FILE_PATH: "algolia.json"
-     - uses: darrenjennings/algolia-docsearch-action@master
-       with:
-         algolia_application_id: ${{secrets.APPLICATION_ID}}
-         algolia_api_key: ${{secrets.ADMIN_API_KEY}}
-         file: 'public/algolia.json'
+      - uses: darrenjennings/algolia-docsearch-action@master
+        with:
+          algolia_application_id: ${{secrets.APPLICATION_ID}}
+          algolia_api_key: ${{secrets.ADMIN_API_KEY}}
+          file: 'public/algolia.json'
