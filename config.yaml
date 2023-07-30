@@ -77,7 +77,7 @@ outputFormats:
 # By default use local search, before switch to Algolia engine
 # Please replace LocalIndexes with AlgoliaIndexes
 outputs:
-  home: ["HTML", "RSS", "LocalIndexes"]
+  home: ["HTML", "RSS", "AlgoliaIndexes"]
 
 # 输出 robots 文件支持爬虫扫描
 # Enable robots with support crawler scan
@@ -912,10 +912,10 @@ params:
   # Algolia Search
   # For more information: https://www.algolia.com
   algoliaSearch:
-    enable: false
-    appId: #<algolia app id>
-    apiKey: #<algolia api key>
-    indexName: #<algolia index name>
+    enable: true
+    appId: D00OUNE9TK
+    apiKey: bfe7770719b1074e97acc36accb13bf0
+    indexName: next-ulagraphy
     hits:
       perPage: 10
     # 索引生成内容长度字数限制
@@ -927,7 +927,7 @@ params:
   localSearch:
     # 是否开启搜索功能
     # Enable search function
-    enable: true
+    enable: false
     # 搜索索引文件路径
     # Indexes file path for search
     path: /searchindexes.xml
