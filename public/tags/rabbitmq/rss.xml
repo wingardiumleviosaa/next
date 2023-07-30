@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RabbitMQ on UlaGraphy</title><link>https://ulagraphy.netlify.com/tags/rabbitmq/</link><description>Recent content in RabbitMQ on UlaGraphy</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Dec 2020 17:31:00 +0000</lastBuildDate><atom:link href="https://ulagraphy.netlify.com/tags/rabbitmq/rss.xml" rel="self" type="application/rss+xml"/><item><title>[RabbitMQ] 在 K8s cluster 上安裝叢集</title><link>https://ulagraphy.netlify.com/post/data-rabbitmq-installation-on-k8s/rabbitmq-on-k8s/</link><pubDate>Wed, 30 Dec 2020 17:31:00 +0000</pubDate><guid>https://ulagraphy.netlify.com/post/data-rabbitmq-installation-on-k8s/rabbitmq-on-k8s/</guid><description>&lt;h2 id="先決條件">先決條件
+&lt;a class="header-anchor" href="#%e5%85%88%e6%b1%ba%e6%a2%9d%e4%bb%b6">&lt;/a>
+&lt;/h2>&lt;ul>
+&lt;li>kubernetes 1.17 版以上&lt;/li>
+&lt;li>RabbitMQ image 3.8.8+&lt;/li>
+&lt;/ul></description></item></channel></rss>

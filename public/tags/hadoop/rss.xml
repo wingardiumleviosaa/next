@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hadoop on UlaGraphy</title><link>https://ulagraphy.netlify.com/tags/hadoop/</link><description>Recent content in Hadoop on UlaGraphy</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 12 Aug 2020 14:32:00 +0000</lastBuildDate><atom:link href="https://ulagraphy.netlify.com/tags/hadoop/rss.xml" rel="self" type="application/rss+xml"/><item><title>[Hadoop] HDFS、MapReduce、Yarn 介紹</title><link>https://ulagraphy.netlify.com/post/data-hadoop-intro/hadoop-introduction/</link><pubDate>Wed, 12 Aug 2020 14:32:00 +0000</pubDate><guid>https://ulagraphy.netlify.com/post/data-hadoop-intro/hadoop-introduction/</guid><description>&lt;p>Hadoop 是一個能夠儲存並管理大量資料的分散式大數據處理平臺，其包含三大模組：&lt;/p>
+&lt;ul>
+&lt;li>HDFS&lt;/li>
+&lt;li>MapReduce&lt;/li>
+&lt;li>Yarn&lt;/li>
+&lt;/ul></description></item></channel></rss>
