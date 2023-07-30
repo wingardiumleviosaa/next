@@ -627,26 +627,6 @@ td {
   background: #272822;
 }
 
-.highlight:hover .copy-btn, pre:hover .copy-btn {
-  opacity: 1;
-}
-
-.copy-btn {
-  color: #333;
-  cursor: pointer;
-  line-height: 1.6;
-  opacity: 0;
-  padding: 2px 6px;
-  position: absolute;
-  right: 8px;
-  top: 4px;
-  transition: opacity 0.2s ease-in-out;
-  background: var(--highlight-background);
-  color: var(--highlight-foreground);
-  font-size: 14px;
-  border-radius: 3px;
-}
-
 .highlight {
   border-radius: 5px;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4);

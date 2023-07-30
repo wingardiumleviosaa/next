@@ -533,7 +533,7 @@ params:
     style: mac
     # 在代码块上添加拷贝按钮
     # Add copy button on codeblock
-    copyBtn: true
+    copyBtn: false
 
   # 返回顶部设置
   # Backtop settings
