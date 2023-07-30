@@ -5,12 +5,18 @@ jobs:
   algolia:
     runs-on: ubuntu-latest
     steps:
-      - name: Upload Records
-        # 使用 Action
-        uses: iChochy/Algolia-Upload-Records@main
-        # 设置环境变量
-        env:
-          APPLICATION_ID: ${{secrets.APPLICATION_ID}}
-          ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
-          INDEX_NAME: ${{secrets.INDEX_NAME}}
-          FILE_PATH: "algolia.json"
+      - uses: actions/checkout@v2
+      #- name: Upload Records
+      #  # 使用 Action
+      #  uses: iChochy/Algolia-Upload-Records@main
+      #  # 设置环境变量
+      #  env:
+      #    APPLICATION_ID: ${{secrets.APPLICATION_ID}}
+      #    ADMIN_API_KEY: ${{secrets.ADMIN_API_KEY}}
+      #    INDEX_NAME: ${{secrets.INDEX_NAME}}
+      #    FILE_PATH: "algolia.json"
+     - uses: darrenjennings/algolia-docsearch-action@master
+       with:
+         algolia_application_id: ${{secrets.APPLICATION_ID}}
+         algolia_api_key: ${{secrets.ADMIN_API_KEY}}
+         file: 'public/algolia.json'
