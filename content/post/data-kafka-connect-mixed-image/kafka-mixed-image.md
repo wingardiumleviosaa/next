@@ -72,6 +72,6 @@ USER kafka
 
 本來使用預設的配置檔 `/kafka/config/connect-distributed.properties`，但在 build 的時候會有 `unknown error` 。
 
-![](./error.png)
+![](https://imgur.com/6I38i4S.png)
 
 為了解決這個問題，就寫了一個假的 properties 給他更新。反正 debezium connect image 預設還是會使用 `/kafka/config/connect-distributed.properties` 跑。只要確保 confluent 安裝的 library `--component-dir` 是安裝在配置檔指定的 `/kafka/connect` 下即可。

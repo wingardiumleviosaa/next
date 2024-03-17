@@ -85,4 +85,4 @@ producer 指定訊息大小的參數為 `max.request.size` ，要注意的是該
 那 ksqlDB 有關 stream 的訊息大小的參數為 `ksql.streams.producer.max.request.size`，看是使用哪種方式部署，更新該參數到 ksqlDB 的 properties 檔案，調整完 size 之後就成功了!!!!!!!!!!!!!!! 讚
 
 
-![](./result.png) 
+![](https://imgur.com/OZEZsDo.png) 

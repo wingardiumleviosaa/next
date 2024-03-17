@@ -38,11 +38,11 @@ Caused by: org.apache.kafka.connect.errors.ConnectException: io.debezium.data.Va
 
 查看原表發現被讀成 VariableScaleDecimal 的資料欄位 ALERT_FLAG 實際上是 NUMBER 資料型態，對比其他正常被讀取成 int 的欄位，差別在於沒有定義固定精確度和零位小數位數。所以被處理成 decimal。
 
-![](type.png)
+![](https://imgur.com/g4q5PtT.png)
 
 在加上參數後，可以發現重新佈署的 connector 收進來的資料就改變成指定型態了。
 
-![](./result.png)
+![](https://imgur.com/y0A4akV.png)
 
 不過因為舊的帶有 decimal struct 格式的資料還是存在在 kafka topic，所以如果再重新佈署 postgresql sink connector 的話仍會因為讀到舊的資料而失敗，除非砍掉 topic 重新佈署。
 
