@@ -42,4 +42,4 @@ slug: vmware-clone-vm-same-ip
 3. 重新查看 IP `ip addr` 便成功了
 
 ## Reference
-- https://serverfault.com/questions/881595/kvm-guest-qcow2-larger-than-disk-size
+- https://zido.site/blog/2021-07-27-ubuntu-clone-vm-same-ip/
