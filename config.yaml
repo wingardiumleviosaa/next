@@ -12,7 +12,7 @@ languageCode: en
 hasCJKLanguage: true
 # 每页显示文章数量
 # Display items per page
-paginate: 5
+paginate: 10
 # 开启支持表情符号
 # Enable Emoji support
 enableEmoji: true
@@ -896,7 +896,7 @@ params:
     #baidu: #<anaytics_id>
     # 谷歌统计
     # Google Analytics
-    #google: #<anaytics_id>
+    google: G-PKBZ9WWMWN
     # 不蒜子统计
     # Show Views / Visitors of the website / page with busuanzi.
     # For more information: http://ibruce.info/2015/04/04/busuanzi/
