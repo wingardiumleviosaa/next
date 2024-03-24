@@ -9,19 +9,19 @@ url: post/blog-hugo-algolia-search.html
 toc: true
 ---
 
-## TL; DR
+### TL; DR
 
 本文紀錄如何在 Hugo 部落格中使用 Algolia 搜索文章，並設置 GitHub Action 在推上 GitHub 時自動更新到 Algolia。
 
 <!--more-->
 
-## 環境
+### 環境
 - Hugo Version: Hugo 0.112.3 Extend
 - Theme: NexT 4.5.2
 
-## 步驟
+### 步驟
 
-### 在本地生成索引檔案
+#### 在本地生成索引檔案
 NexT 本身支援生成 Aligolia JSON 格式的索引檔案，生成檔為 NexT themes 目錄的 `layout/_default/list.algoliaindexes.json`。僅須在 blog 目錄下的 config.yaml 開啟相關設定即可。
 
 ```yaml
@@ -87,7 +87,7 @@ jobs:
 
 ![](./secrets.png)
 
-## 驗證
+### 驗證
 
 推上 GitHub 後，pipeline 會自動觸發並完成上傳，就能在網頁上啟用 Algolia 的搜索功能了!
 
@@ -96,6 +96,6 @@ jobs:
 ![](./result.png)
 
 
-## References
+### References
 - [automatic-upload-algolia-index-with-action](https://lisenhui.cn/tech/automatic-upload-algolia-index-with-action.html)
 - [iChochy/Algolia-Upload-Records](https://github.com/iChochy/Algolia-Upload-Records)

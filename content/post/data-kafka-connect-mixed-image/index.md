@@ -8,13 +8,13 @@ date: 2024-03-16 14:30:00
 slug: "kafka-implement-mixed-image"
 ---
 
-## TL; DR
+### TL; DR
 
 因為在實作 kafka connect 時，常常會需要用到來自於 Confluent 以及 Debezium 兩個開源的 connect 鏡像，但每次都要根據當下需求而部署不同 image 的 container，故就打算將兩個 image 整合。
 
-<!-- more -->
+<!--more-->
 
-## Dockerfile
+### Dockerfile
 
 這個 image 整合了以下 Library：
 - Oracle JDBC Driver for Debezium
@@ -66,7 +66,7 @@ RUN confluent-hub install --no-prompt mongodb/kafka-connect-mongodb:$MONGO_SOSI_
 USER kafka
 ```
 
-## 坑
+### 坑
 
 其中使用 confluent-hub install command 安裝時，需要指定 `--component-dir` 安裝 plugin 到指定目錄，以及 `worker-configs` 此為指定 connect properties 的參數檔，會幫忙更新參數檔中的 `plugin.path` 的值。
 

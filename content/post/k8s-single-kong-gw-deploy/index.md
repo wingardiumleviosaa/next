@@ -9,14 +9,14 @@ date: 2024-03-16 16:44:00
 slug: single-kong-gw-deploy-on-kubernetes
 ---
 
-## TL; DR
+### TL; DR
 Kong 有不同部署架構，本文僅示範單一的 kong gateway 節點在 Kubernetes 上的安裝方式。透過官方的 helm chart 部署，包含 kong admin、 kong proxy 以及原生的 Kong Admin UI - Kong Manager。
 
-<!-- more -->
+<!--more-->
 
 ![](https://imgur.com/8eEb5j0.png)
 
-## 安裝步驟
+### 安裝步驟
 
 1. 建立 namesapce
 
