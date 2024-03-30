@@ -244,7 +244,8 @@ x = append(x, 2, 3, 4, 5)
 2. slice本身為一個引用型別，底層有指標指向一個array
 3. 重新切片指改變指標位址，底層陣列不變
 4. copy為另外建一個新的底層array
-2. 使用slice時建議事先使用make並規劃好容量cap，這樣在使用append時可以避免反覆重新分配記憶體{{% /notice %}}
+2. 使用slice時建議事先使用make並規劃好容量cap，這樣在使用append時可以避免反覆重新分配記憶體
+{{% /notice %}}
 
 
 

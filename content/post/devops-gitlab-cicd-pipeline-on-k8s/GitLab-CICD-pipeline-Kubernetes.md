@@ -201,15 +201,16 @@ rbac:
 ```
 
 ## 成功
-![](https://imgur.com/L4cd5Pu.png)
 
-![](https://imgur.com/fTBS3Ju.png)
+![](https://imgur.com/L4cd5Pu.png)  
 
-![](https://imgur.com/ItXsMzH.png)
+![](https://imgur.com/fTBS3Ju.png)  
+
+![](https://imgur.com/ItXsMzH.png)  
 
 順便觀察 Runner 在工作的過程會有很多 pod 被建立，隨著構建工作結束後 Runner 會自動刪除這些 pod。
 
-![](https://imgur.com/wn5Vd3P.png)
+![](https://imgur.com/wn5Vd3P.png)  
 
 ## Reference
 - https://docs.gitlab.com/runner/install/kubernetes.html
