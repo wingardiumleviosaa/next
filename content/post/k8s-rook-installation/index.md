@@ -3,6 +3,7 @@ title: '[Kubernetes] Rook 1.13 (Ceph on Kubernetes) 安裝紀錄'
 tags:
   - Kubernetes
   - Ceph
+  - Rook
 categories:
   - Kubernetes
 date: 2024-03-30T10:45:00+08:00
