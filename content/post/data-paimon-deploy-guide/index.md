@@ -5,7 +5,7 @@ tags:
   - Ceph
 categories:
   - DataEngineering
-  - Paimon
+  - Apache Paimon
 date: 2024-06-01T15:06:01+08:00
 slug: data-paimon-deploy-guide
 ---

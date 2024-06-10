@@ -2,7 +2,7 @@
 title: '[Trino] 使用 Docker 安裝 Trino 並串接儲存於 S3 的 Paimon Catalog'
 categories:
   - DataEngineering
-  - Trino
+  - Apache Trino
 tags: ["Trino","Flink", "Paimon"]
 date: 2024-03-24 07:55:00
 slug: "trino-connect-paimon-s3"
