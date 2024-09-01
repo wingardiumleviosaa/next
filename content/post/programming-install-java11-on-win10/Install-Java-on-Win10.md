@@ -42,10 +42,10 @@ public class Hello {
     }
 }
 ```
-{{% notice note %}}
+{{< notice note >}}
 關於程式內部詳細的解說，之後的文章會記錄。
 (不過本來因為數據中台的專案要用 Map Reduce 所以學的，但因為工作又有小變動，所以不知道何年何月才可以再繼續看 Java，先暫緩了 :stuck_out_tongue_closed_eyes: )
-{{% /notice %}}
+{{< /notice >}}
 
 ## 編譯檔案
 使用 javac 公用程式來編譯檔案。

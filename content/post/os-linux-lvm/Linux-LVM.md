@@ -72,9 +72,9 @@ $ lvdisplay
 
 <br>
 
-{{% notice info %}}
+{{< notice info >}}
 不同的工具會使用不同的 LV 路徑，傳統名稱 /dev/vgName/lvName 或 kernel device mapper 名稱 /dev/mapper/vgname-lvname。
-{{% /notice %}}
+{{< /notice >}}
 
 - 格式化虛擬磁區  
 格式化為 xfs 文件系統

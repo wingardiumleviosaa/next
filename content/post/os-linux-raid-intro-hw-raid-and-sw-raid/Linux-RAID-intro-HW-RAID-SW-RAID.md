@@ -132,9 +132,9 @@ $ sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
 
 <br>
 
-{{% notice info %}}
+{{< notice info >}}
 如果出現 "Device or resource busy"，則需要重開機。
-{{% /notice %}}
+{{< /notice >}}
 
 確認結果
 ```

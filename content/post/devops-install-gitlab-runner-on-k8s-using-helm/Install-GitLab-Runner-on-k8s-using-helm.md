@@ -100,9 +100,9 @@ runners:
 - image：指定預設的 docker image 給 job pod，當 pipeline 沒有指定時便會使用該預設。
 - 因為之後會需要使用 docker-in-docker 方式 (在 pipeline 中構建 docker 鏡像)，所以需要掛載 /var/run/docker.sock 到 gitlab runner pod 中，另外還要設置 privileged 為 true，否則會報無法連接 docker daemon 的錯誤。
 
-{{% notice warning %}}
+{{< notice warning >}}
 在生產環境中，使用特權模式運行 docker-in-docker 有一些注意事項，可以參考這篇 <a href="https://docs.gitlab.com/runner/executors/kubernetes.html#using-docker-in-your-builds">文檔</a> 
-{{% /notice %}}
+{{< /notice >}}
 
 ### 開始建立
 建立 namespace

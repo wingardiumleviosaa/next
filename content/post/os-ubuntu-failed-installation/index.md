@@ -25,9 +25,9 @@ slug: ESXi-failed-installation
 	![](./update_nic.png)
 	故重新插入另一個網孔，並進入 BIOS 關閉舊網卡。不過再重新安裝 VM 後，仍然遇到一樣的錯誤，且都是在最後一步設定使用者的時候。故再重新研究該篇文章的回覆，在 VM 設定頁面先移除網卡，就能順利安裝 OS。安裝完畢後，再重新加上網路介面卡選項即可。
 
-{{% notice tip %}}
+{{< notice tip >}}
 If you're running Ubuntu server in a VM (Gnome boxes, kvm, libvirt etc). Then remove any attached NIC's before you install the OS. Otherwise install fails with the above error.
-{{% /notice %}}
+{{< /notice >}}
 
 
 2. CPU 沒有啟用 vtx 功能

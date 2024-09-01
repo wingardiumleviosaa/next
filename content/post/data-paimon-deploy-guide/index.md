@@ -155,9 +155,9 @@ Apache Paimon 支持各種目錄，設置因文件系統而異：
 
 ## 查詢數據
 
-{{% notice note %}}
+{{< notice note >}}
 💡 在 Apache Paimon 中執行查詢。根據目錄設置和數據的性質（流式或批量），方法略有不同。
-{{% /notice %}}
+{{< /notice >}}
 
 通過設置適當的運行模式來執行流式查詢：
 

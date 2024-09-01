@@ -46,9 +46,9 @@ s3.aws-secret-key=60Kwr0A9jjH4A2ZOHgY74ZBUbpxgG2ALsoQ6uC4W
 s3.region=us-east-1
 ```
 
-{{% notice info %}}
+{{< notice info >}}
 這個設定檔是參考 trino <a href="https://trino.io/docs/current/object-storage/file-system-s3.html">官網</a> 的設定項，其中 Ceph 因為沒有 region，但該連接參數又是必須，所以隨意給一個地區字串。
-{{% /notice %}}
+{{< /notice >}}
 
 準備 `docker-compose.yaml` 檔案
 

@@ -15,9 +15,9 @@ slug: "Build-Hugo-with-Netlify"
 
 Hugo 由 Golang 編寫，標榜為世界上最快的靜態網站建構框架。缺點是沒有預設的主題樣式，現成的樣板選擇也沒有 Hexo 那麼多，配置檔幾乎是從頭編寫，傳統單純部署在 github pages 的方式也是不那麼簡易。  
 
-{{% notice note %}}
+{{< notice note >}}
 新手適合 Hexo 配置簡單，而要求速度的人則選擇 Hugo。
-{{% /notice %}}
+{{< /notice >}}
 
 比較下來決定使用 Hugo。原本應該是要把 Hexo 部落格搬移到 Hugo，但發現兩者個 markdown 格式有些差異。因為懶得研究更多用法，這邊索性紀錄一些生活吧。  
 

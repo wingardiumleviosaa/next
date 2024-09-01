@@ -25,9 +25,9 @@ slug: lidimy-alg101-note
 
 ![](https://imgur.com/NR7Hxwo.png)
 
-{{% notice warning %}}
+{{< notice warning >}}
 縮排的重要性！縮牌等於一個區塊，例如 if-end if 代表一個區塊，大大的增加程式可讀性。
-{{% /notice %}}
+{{< /notice >}}
 
 ![](https://imgur.com/a9znaI2.png)
 

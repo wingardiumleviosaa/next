@@ -138,15 +138,15 @@ ENTRYPOINT [ "/reverseapi" ]
 
 </br>
 
-{{% notice info %}}
+{{< notice info >}}
 在測試的時候是安裝完整的 instantclinet，但應該可以裝 lite 版本的，以減少不必要的 image 大小。
-{{% /notice %}}
+{{< /notice >}}
 
 </br>
 
-{{% notice info %}}
+{{< notice info >}}
 在 debug 的時候可以直接進去 container 裡面找錯誤訊息中找不到的 library 放哪，然後在自己手動建 link
-{{% /notice %}}
+{{< /notice >}}
 
 ## Reference
 

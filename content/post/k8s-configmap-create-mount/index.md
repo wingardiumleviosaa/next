@@ -38,9 +38,9 @@ $ kubectl create configmap myConf --from-file=/path/of/app1.properties --from-fi
 
 </br>
 
-{{% notice note %}}
+{{< notice note >}}
 如果是來源是檔案的話，則 configMap 中的 key 就會是檔名，value 則是檔案內容。
-{{% /notice %}}
+{{< /notice >}}
 
 - --from-literal
 ```
@@ -60,9 +60,9 @@ $ kubectl create configmap myConf --from-file=/path/of/config.conf \
 - --from-env-file
 使用環境變數表示的檔案。
 
-{{% notice warning %}}
+{{< notice warning >}}
 請注意，value 如果有 "" 則會視為是值的一部份。且如果在同個 create 中使用多個 --from-env-file 則指會應用最後一個。
-{{% /notice %}}
+{{< /notice >}}
 
 #### 使用 kubectl apply yaml 檔案建立
 準備 yaml 檔
@@ -162,9 +162,9 @@ spec:
 
 </br>
 
-{{% notice note %}}
+{{< notice note >}}
 使用 volume 將 ConfigMap 作為文件或目錄直接掛載，ConfigMap 中每一個 key-value 鍵值對都會生成一個文件，key 為文件名，value 為內容。
-{{% /notice %}}
+{{< /notice >}}
 
 另一種方式，只掛載某個 key，並指定相對路徑。
 

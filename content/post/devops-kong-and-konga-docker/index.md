@@ -13,9 +13,9 @@ Kong 有不同部署架構，本文僅示範單一的 kong gateway 節點使用 
 
 <!--more-->
 
-{{% notice note %}}
+{{< notice note >}}
 Konga 是一個非官方的第三方開源的 kong 圖形化管理工具，使用 Node.js 開發，不過隨著 Kong Gateway 版本的更新，許多三方開源管理面板都缺乏及時維護而無法使用了。之後建議直接使用 Kong Gateway OSS 在 2023 開源的官方管理界面 Kong Manager。
-{{% /notice %}}
+{{< /notice >}}
 
 ### Docker Compose YAML
 

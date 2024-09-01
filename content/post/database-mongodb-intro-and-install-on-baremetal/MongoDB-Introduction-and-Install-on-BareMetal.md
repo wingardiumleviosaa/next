@@ -53,10 +53,10 @@ Collection 是一組 Document，如果把它用來與關聯式資料庫比較，
 
 
 ## 在 Ubuntu 18.04 上安裝 MongoDB 4.4 Community Edition
-{{% notice info %}}
+{{< notice info >}}
 MongoDB 4.4 Community Edition 僅支援 64-bit 的 20.04、18.04、16.04 Ubuntu 版本。
 官方的套件是由 MongoDB Inc. 維護的 mongodb-org，並且會在 repo 中保持最新版本。而 Ubuntu 提供的套件是 mongodb 非為官方套件，在安裝官方套件前須前解除安裝。
-{{% /notice %}}
+{{< /notice >}}
 
 ### 導入 apt 使用的公鑰
 ```

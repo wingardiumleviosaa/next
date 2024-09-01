@@ -112,11 +112,11 @@ addauth digest [帳號]:[明文密碼]
 
 --------------
 
-{{% notice info %}}
+{{< notice info >}}
 補充
 在 Linux 中執行某些程序前會對啟動它的用戶進行認證，符合一定的要求之後才允許執行，例如 login, su 等。在 linux 中進行身份或是狀態的驗證程序是由 PAM 來進行的。
 PAM（Pluggable Authentication Modules）是由 Sun 提出的一種認證機制。它通過提供一些動態鏈接庫和一套統一的 API，將系統提供的服務和該服務的認證方式分開，使得系統管理員可以靈活地根據需要給不同的服務配置不同的認證方式而無需更改服務程序，同時也便於向系統中添加新的認證手段。PAM 模塊是一種嵌入式模塊，修改後即時生效。
-{{% /notice %}}
+{{< /notice >}}
 
 ## Reference
 - https://baike.baidu.com/item/PAM/3747946

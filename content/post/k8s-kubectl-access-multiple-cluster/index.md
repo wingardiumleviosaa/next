@@ -61,7 +61,7 @@ $ kubectl config use-context kubernetes-admin@kubernetes-dev
 ```
 
 
-{{% notice tip %}}
+{{< notice tip >}}
 其實 config 並不一定要合在一起，分開然後使用環境變數指定多個 config 也可以。看自己的習慣~
-{{% /notice %}}
+{{< /notice >}}
 

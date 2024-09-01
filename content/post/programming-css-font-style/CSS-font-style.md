@@ -110,11 +110,11 @@ word-break: break-all 值如其名，斷開一切，利用上每一塊可以利�
 - clipe：將超出範圍的字切斷
 - 字串：使用指定字串來取代多餘的字串
 
-{{% notice warning %}}
+{{< notice warning >}}
 請注意
 1. 要使用 text-overflow: ellipsis 的先決條件是要先設置 white-space:wrap & overflow:hidden;
 2. overflow 用的範圍比較廣，text-overflow 就僅針對文字而已。
-{{% /notice %}}
+{{< /notice >}}
 
 ![](https://imgur.com/gILIjIx.gif)
 

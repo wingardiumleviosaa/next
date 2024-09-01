@@ -38,9 +38,9 @@ qemu-img convert -p -f qcow2 ./vm-disk-original.qcow2 -O qcow2 ./vm-disk-shrinke
 
 ![](https://imgur.com/EITaak4.png)
 
-{{% notice warning %}}
+{{< notice warning >}}
 以防萬一，請先將 VM 關機後再操作。
-{{% /notice %}}
+{{< /notice >}}
 
 ## Reference
 - https://serverfault.com/questions/881595/kvm-guest-qcow2-larger-than-disk-size

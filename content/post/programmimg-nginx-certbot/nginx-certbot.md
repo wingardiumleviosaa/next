@@ -17,9 +17,9 @@ Let’s Encrypt 是一個免費、自動化且開放的憑證機構 (Certificate
 
 Let’s Encrypt 使用 ACME 協定，來驗證申請網域控制權。使用者透過 ACME 客戶端軟體取得並管理憑證。最常見的 ACME 客戶端軟體為 <mark>Certbot</mark>
 
-{{% notice note %}}
+{{< notice note >}}
 ACME (Automatic Certificate Management Environment): 自動憑證管理環境。由 Let's Encrypt 所實作的協議，與它相容的軟體可以透過此協議與 Let’s Encrypt 溝通以獲得憑證。[1]
-{{% /notice %}}
+{{< /notice >}}
 
 ## 實作
 在 [Certbot](https://certbot.eff.org/instructions) 官方網站有快速指引，只需要選擇網站使用的 HTTP Server 以及作業系統，下方就會列出指令，可以直接複製並安裝。
@@ -30,9 +30,9 @@ ACME (Automatic Certificate Management Environment): 自動憑證管理環境。
 
 ### 1. 加入Certbot PPA
 
-{{% notice note %}}
+{{< notice note >}}
 PPA(Personal Pakage Archives)：個人軟體包文件，可加入個人開發者的 repository，使其他使用戶安裝和更新。
-{{% /notice %}}
+{{< /notice >}}
 
 請依序在 console 中下以下 command
 

@@ -29,9 +29,9 @@ function test() {
 ```
 b 的生存範圍僅限於 if 區塊中；而 a 的生存範圍則是整個 function。
 
-{{% notice info %}}
+{{< notice info >}}
 作用域愈小愈好，才不會干擾到其他人，所以比較建議使用 let。
-{{% /notice %}}
+{{< /notice >}}
 
 
 ## 更方便的串接字串 - Template Literals
@@ -286,9 +286,9 @@ p.s. Node.js 還沒支援這種新語法，所以要使用接下來介紹的轉�
 ## Babel
 Babel 是 JavaScript 轉譯器，可將 ES6 以上的程式碼轉為 ES5 程式碼，以支援還沒支持新語法的瀏覽器或環境。
 
-{{% notice warning %}}
+{{< notice warning >}}
 babel-node 執行的時候會佔大量的記憶體空間，官方不建議在 production 環境使用。
-{{% /notice %}}
+{{< /notice >}}
 
 1. 安裝 babel-node
 `$ install --save-dev @babel/core @babel/node`

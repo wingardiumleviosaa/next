@@ -19,9 +19,9 @@ slug: k8s-rook-installation
 - Kubernetes：支持 v1.25 至 v1.29 版本
 - Ceph Node Resource Requiement：不同組件需要不同的硬體資源大小，請參考 [SUSE 文檔](https://documentation.suse.com/sbp/storage/html/SBP-rook-ceph-kubernetes/index.html#sec-hardware-resource-req) 了解具體要求。
 
-{{% notice tip %}}
+{{< notice tip >}}
 測試發現，三個工作節點配置為 4 core vCPU / 8GB RAM 會導致安裝失敗，升級至 8 core vCPU / 16GB RAM 後才能順利運行。
-{{% /notice %}}
+{{< /notice >}}
 
 - 至少需要以下一種本地儲存類型：
     - 原始硬碟（無分區或格式化文件系統）
@@ -59,9 +59,9 @@ helm install --create-namespace --namespace rook-ceph rook-ceph rook-release/roo
 
 ![](./operator.png)
 
-{{% notice info %}}
+{{< notice info >}}
 如果叢集是一個三節點的叢集（1 個 Master + 2 個 Worker），那麼 Master 節點也需要作為工作負載節點使用，可以去掉欲安裝的 master 節點的污點：
-{{% /notice %}}
+{{< /notice >}}
 
 ```bash
 kubectl taint node node1 node-role.kubernetes.io/master:PreferNoSchedule-

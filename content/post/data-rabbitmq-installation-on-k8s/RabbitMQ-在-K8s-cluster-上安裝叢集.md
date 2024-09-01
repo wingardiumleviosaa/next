@@ -54,9 +54,9 @@ spec:
 
 <br>
 
-{{% notice warning %}}
+{{< notice warning >}}
 persistence 可以不寫，但 k8s 集群必須事先設置 default 的 StorageClass，若無填寫則會使用 default storageClass。否則集群將不會被 scheduled 成功，因為 rabbitMQ 需要有 persistent volume。
-{{% /notice %}}
+{{< /notice >}}
 
 p.s. 使用 `$ kubectl get sc` 取得目前 k8s 集群的 StorageClass 資源
 

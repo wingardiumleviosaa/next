@@ -64,9 +64,9 @@ return msg;
 
 </br>
 
-{{% notice info %}}
+{{< notice info >}}
 由此可推第一片與下一片的時間差為 producing 時間加上過站三秒，因此 START!! inject node 的 intervel 時間設為上述時間差再加上三秒(送到第一台機器的過站時間)。
-{{% /notice %}}
+{{< /notice >}}
 
 機器二為 `Running` 時完成片數加一、狀態變閒置；機器二做完後為 `Idle` 時，將機器三的狀態喚醒；
 ```js

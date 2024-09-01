@@ -11,15 +11,7 @@ copyright: false
 url: about.html
 ---
 
-是個動靜自如的宅女，養了隻貓，但也是個超級狗派 :3  
-
-興趣是追劇、動漫跟 NBA。順便說一下，喜歡的球星是 Kawhi Leonard 🖐🏾  
-
-雖然宅但很喜歡旅行，去過美東、加拿大、中國、日本和馬來西亞。
-
-最瘋狂的事就是單攻玉山跟單車環島~  
-
-這個部落格是我用來記錄技術筆記，以及一些重要生活紀錄的地方！
-
-<img src="https://imgur.com/vyui3YI.png" alt="mycat1" width="520">
-<img src="https://imgur.com/IHGsmw4.png" alt="mycat2" width="520">
+我的貓 :D
+<br>
+<img src="mycat1.jpg" alt="mycat1" height="400" style="display: inline-block;">
+<img src="mycat2.jpg" alt="mycat2" height="400" style="display: inline-block;">

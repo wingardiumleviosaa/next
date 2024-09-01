@@ -194,7 +194,7 @@ spec:
 ![](./k8s-ha.png)
 
 
-{{% notice tip %}}
+{{< notice tip >}}
 其他常見的 HA 架構為使用 HA Proxy + keepalive
-{{% /notice %}}
+{{< /notice >}}
 

@@ -226,6 +226,6 @@ namespace "test" deleted
 ```
 
 </br>
-{{% notice warning %}}
+{{< notice warning >}}
 另外關於 metric-server 的 debug，紀錄在另外一篇 <a href="https://ulagraphy.netlify.app/post/k8s-helm-install-metrics-server/kubernets-install-metrics-server-by-helm/">文章</a>。
-{{% /notice %}}
+{{< /notice >}}

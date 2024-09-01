@@ -98,9 +98,9 @@ $ git push -u origin master
 ### git pull (pull remote repo at local)
 github 可以在線上編輯 code，或是共同協做的時候，其他人做過更動想要同步在本地端時，下 `$ git pull origin master`，從遠端 origin pull master branch 下來。
 
-{{% notice warning %}}
+{{< notice warning >}}
 請注意，如果在遠端做更新後，本地端一定要先 git pull 將最新版同步，才能再做 git push!
-{{% /notice %}}
+{{< /notice >}}
 
 ![](https://imgur.com/lBtK1xX.png)
 
@@ -150,9 +150,9 @@ github 上的 `Pull Request` 用於合併分支，通常在 github 做 merge 方
 ![](https://imgur.com/15OAr1b.png)
 
 然後從自己的 repo git clone 下來，才可以做修改後再 push 上自己的 github。
-{{% notice warning %}}
+{{< notice warning >}}
 請注意，用 fork 的情況是因為沒有該原 repo 的權限 (permission deny)，如果自己本身有被 repo 的作者開啟修改的權限的話，就可以直接在本地端 git push 上他的 repo
-{{% /notice %}}
+{{< /notice >}}
 
 ## source
 [all] 大部分的內容皆來自 [Lidemy](https://lidemy.com/) [GIT101] 的課堂筆記

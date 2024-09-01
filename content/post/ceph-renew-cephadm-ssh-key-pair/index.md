@@ -35,9 +35,9 @@ vi ~/.ssh/authorized_keys
 # 刪除舊的公鑰，並貼上公鑰內容
 ```
 
-{{% notice info %}}
+{{< notice info >}}
 ⚠️ 請注意，連 cephadm 自己的 authorized_key 也須更新，否則在下一步驟設定新的金鑰對的時候會出現 `Error EINVAL: ssh connection [root@ceph-1.sdsp-stg.com](mailto:root@ceph-1.sdsp-stg.com) failed` 的錯誤。
-{{% /notice %}}
+{{< /notice >}}
 
 ## 更新 cephadm key pair
 

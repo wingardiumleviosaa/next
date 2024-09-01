@@ -101,9 +101,9 @@ git status
 
 ### 處理遠端倉庫(忽略遠端倉庫的修改)
 
-{{% notice warning %}}
+{{< notice warning >}}
 基本上，用此方法強制 push 本地端的更新到遠端，會使遠端修改丢失，一般是不可取的，尤其是多人協作開發的時候。
-{{% /notice %}}
+{{< /notice >}}
 
 但我這次遇到的狀況恰好就是要蓋掉遠端的更新。在 master branch，強制更新 remote master branch。
 **需要先解除 remote master branch 的 protect (Github or Gitlab 的遠端倉庫上 Settings / Repository / Protected branches)

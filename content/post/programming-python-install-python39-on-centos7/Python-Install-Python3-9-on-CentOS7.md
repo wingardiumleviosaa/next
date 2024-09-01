@@ -83,13 +83,13 @@ Python 3.9.1
 
 </br>
 
-{{% notice info %}}
+{{< notice info >}}
 環境變數設定小補充
 /etc/profile --> 對所有用戶永久生效
 ~/.bashrc --> 對單一用戶永久生效，當你"啟動" shell 時執行
 ~/.bash_profile --> 對單一用戶永久生效，當你"登入" shell 時執行
 export xxx = xxx -->直接運行 export 命令定義變量，只對當前 shell 有效，關閉shell 終端後失效。
-{{% /notice %}}
+{{< /notice >}}
 
 
 ## Refernce

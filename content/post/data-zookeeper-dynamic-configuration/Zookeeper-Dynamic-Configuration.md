@@ -101,9 +101,9 @@ $ /opt/zookeeper/bin/zkCli.sh -server 10.1.5.31:2181
 動態配置存儲在特殊的 znode，ZooDefs.CONFIG_NODE = /zookeeper/config 中。默認情況下，此節點對所有用戶都是 `read-only` 的，但超級使用者和 CONFIG_NODE 配置為`寫`訪問權限的 user 除外。
 關於如何修改 ACL 權限，請參考上一篇文章 － [Zookeeper ACL](https://ulahsieh.netlify.app/p/zookeeper-acl/)
 
-{{% notice warning %}}
+{{< notice warning >}}
 另外也可以使用 `skipACL` 來禁用 ACL 檢查，ZooKeeper 支持在　zoo.cfg 中的 `skipACL` 參數設置為 `yes` 時完全跳過 ACL。在這種情況下，任何未經身份驗證的用戶都可以使用 reconfig API。不安全，建議不要使用。
-{{% /notice %}}
+{{< /notice >}}
 
 ## 動態增加 & 刪除節點
 

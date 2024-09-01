@@ -92,9 +92,9 @@ resource "kubernetes_ingress" "grafana_ingress" {
 ## 發生原因
 原因是在 ingress v1.0.0 版之後，ingress 需要加上 ingress class，請參考 github 的 [#7341](https://github.com/kubernetes/ingress-nginx/pull/7341) pull request，如果沒有，controller 會丟 `Ignoring ingress because of error while validating ingress class" ingress="k8sNamespace/ingressResourceName" error="ingress does not contain a valid IngressClass"` 的錯誤。
 
-{{% notice info %}}
+{{< notice info >}}
 An Ingress Class is basically a category which specify who needs to serve and manage the Ingress, this is necessary since in a cluster you can have more than one Ingress controller, each one with its rules and configurations.
-{{% /notice %}}
+{{< /notice >}}
 
 ## 解決方法
 在 ingress resource 中的 metadata 欄位加上 `annotations: kubernetes.io/ingress.class: "nginx"` 即可。

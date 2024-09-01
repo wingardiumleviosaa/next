@@ -22,10 +22,10 @@ $ sudo adduser --home /home/git --disabled-password git
 ```
 </br>
 
-{{% notice note %}}
+{{< notice note >}}
 small tips:
 若開發團隊僅有兩三人，那不建立 git 帳號而是建立使用者個別的帳號也行。但考慮到日後可能擴編或是人員交替等等的因素，可能會增加管理的負擔。
-{{% /notice %}}
+{{< /notice >}}
 
 ## Step 2: 安裝所需套件
 

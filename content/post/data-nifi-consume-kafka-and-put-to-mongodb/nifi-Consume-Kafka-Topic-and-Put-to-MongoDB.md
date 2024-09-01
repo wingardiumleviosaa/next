@@ -44,9 +44,9 @@ kafka 的資料源為 JSON 結構的 string，如下：
 
 ![](https://imgur.com/R2hAeN5.png)
 
-{{% notice info %}}
+{{< notice info >}}
 `Automatically Terminate Relationships` 指的是數據流路由到這個 Processor 後，特定狀態下會被刪除，一般在 Endpoint Processor 配置，因為數據流不需要再被繼續路由了。
-{{% /notice %}}
+{{< /notice >}}
 
 ## 4. 啟動流程
 

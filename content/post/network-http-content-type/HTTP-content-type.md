@@ -48,18 +48,18 @@ Body 中按照字段個數可分為多個相同結構的部分，每部分都是
 ### text/plain
 數據以純文本形式(text/json/xml/html)進行編碼，其中不含任何控制項或格式字符。
 
-{{% notice warning %}}
+{{< notice warning >}}
 以上三種 content type，是 HTML5 規範中 form 的 enctype 的可能值。
-{{% /notice %}}
+{{< /notice >}}
 
 
 ### application/json
 用 json 來傳遞參數資料，可以方便的提交複雜的結構化數據，特別適合 RESTful 的接口。
  
-{{% notice warning %}}
+{{< notice warning >}}
 application/json 已經被 W3C 遺棄，建議不要在`<form enctype="...">`中使用，即使用了如果瀏覽器不支持，也會替換成 application/x-www-form-urlencoded。
 同理，其余的 MIME 類型，也不支持，均會替換成默認編碼 application/x-www-form-urlencoded。
-{{% /notice %}}
+{{< /notice >}}
 
 ## Reference
 - [1]https://imququ.com/post/four-ways-to-post-data-in-http.html  

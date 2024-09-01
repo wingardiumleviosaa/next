@@ -46,9 +46,9 @@ slug: "tcpip-4layer"
 ### TCP/ IP - 鏈結層 Link Layer
 位於整個網路架構的最底層，負責制定資料傳輸的「實體」規格。所謂「實體」，就是我們眼睛看的到，手可以摸到的部分。以乙太網路來說，凡是接頭規格、傳輸線材種類、MAC 實體位址，都是鏈結層負責的內容。
 
-{{% notice info %}}
+{{< notice info >}}
 剩下的三層，網路層、傳輸層、以及應用層將分為後面三篇文章紀錄。
-{{% /notice %}}
+{{< /notice >}}
 
 ## source
 [1]http://linux.vbird.org/linux_server/0110network_basic.php   

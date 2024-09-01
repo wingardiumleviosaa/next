@@ -333,11 +333,11 @@ kubeadm join 10.1.5.146:6443 --token abcdef.0123456789abcdef \
 ![](https://imgur.com/Q6AICJ9.png)
 
 
-{{% notice note %}}
+{{< notice note >}}
 **後記**
 有些截圖裡面可以發現原本的 master node 的 hostname 本來叫 rockym 的，可是在加入 master node 節點的時候的名字忘記改 (冏) 導致 master node 強迫改名為 node ...
 求助谷歌大神，發現改節點名稱最乾淨且簡單的方式就是刪掉節點後重新加入，但不巧地是我要改的節點就是唯一一個的 master node =__= 只好折衷將錯就錯改 hostname，不知道後續會不會發生問題，先記錄一下。
-{{% /notice %}}
+{{< /notice >}}
 
 ## Reference
 - [kube-proxy](https://fuckcloudnative.io/posts/ipvs-how-kubernetes-services-direct-traffic-to-pods/)

@@ -76,9 +76,9 @@ console.log(app.triple(3))
 
 </br>
 
-{{% notice info %}}
+{{< notice info >}}
 使用 export.<sth> 輸出的東西，都會是物件！ 而使用 module.export 輸出可以是數值、陣列、函式、或物件。
-{{% /notice %}}
+{{< /notice >}}
   
 ## Source
 [All] 此篇為觀看 Lidemy JS102 的筆記，圖片來源取自上課影片

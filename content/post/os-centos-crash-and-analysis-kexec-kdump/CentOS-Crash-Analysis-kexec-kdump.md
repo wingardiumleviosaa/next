@@ -36,11 +36,11 @@ kdump 通常在安裝 CentOS 時就會預設開啟了
 
 ![](https://imgur.com/3tNR6NA.png)
 
-{{% notice note %}}
+{{< notice note >}}
 - 網路上有些教學會寫需要修改 grub 的 crashkernel 預留記憶體大小、以及更新 kdump.conf 配置，但也可以不配置、不更新；皆保持預設。
 - 在 Linux 4.15 中預設使用 `crashkernel=auto`，kernel 將通過 memblock_find_in_range 自動計算核心的記憶體大小和起始位置，但是有些核心可能不支持，需要手動指定。
 - 如果要自己手動設定，可參考 <a href="https://www.linuxtechi.com/how-to-enable-kdump-on-rhel-7-and-centos-7/">這篇教學</a>
-{{% /notice %}}
+{{< /notice >}}
 
 ### 3. 安裝 kernel-debuginfo
 使用 crash 除錯核心轉儲檔案，需要安裝 crash 工具和核心除錯工具 kernel-debuginfo。下載連結 [http://debuginfo.centos.org/7/x86_64/](http://debuginfo.centos.org/7/x86_64/)

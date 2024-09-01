@@ -82,6 +82,6 @@ Outline 跟 Border 都是邊框，不一樣的是 Outline 是外框，不會改�
 
 ![](https://imgur.com/vU6Mq2K.gif)
 
-{{% notice info %}}
+{{< notice info >}}
 不過實際上比較常用 border!
-{{% /notice %}}
+{{< /notice >}}

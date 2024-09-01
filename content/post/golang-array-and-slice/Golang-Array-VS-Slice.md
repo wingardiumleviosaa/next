@@ -76,9 +76,9 @@ arr3: 0x40a120, [apple banana]
 2. 傳遞時複製整個組數，array一大時，便會消耗大量記憶體
 </td></tr></table>
 
-{{% notice warning %}}
+{{< notice warning >}}
 所以在大多數的Go code中，<font color=DarkBlue>**slice較常被使用**</font>
-{{% /notice %}}
+{{< /notice >}}
 
 
 ## Slice
@@ -146,9 +146,9 @@ y = x[2:]  // y == [3 4 5]
 y[2] = 0   // y == [3 4 0] ; x == [1 2 3 4 0]
 ```
 須特別留意的是
-{{% notice warning %}}
+{{< notice warning >}}
 使用`[:]`重新切片後，底層的陣列不變，意即y.ptr == x.ptr + 8 (位移了兩位)。 當修改了`y[2]`的值變是修改了`x[4]`
-{{% /notice %}}
+{{< /notice >}}
 
 若是不想要兩個slice共用同一個array，則要使用下一個內建函數copy
 
@@ -192,10 +192,10 @@ c = append(b, a…) //拿另一個slice append另一個slice再給自己
 
 </br>
 
-{{% notice warning %}}
+{{< notice warning >}}
 問題來了，使用append函數時，底層的array會是一樣的嗎？
 答案是<font color=Red size= 5>**不一定**</font>
-{{% /notice %}}
+{{< /notice >}}
 </p>
 
 #### append底層array的共用與分裂
@@ -239,13 +239,13 @@ x = append(x, 2, 3, 4, 5)
 
 ## 結論
 
-{{% notice note %}}
+{{< notice note >}}
 1. 使用slice比起使用固定長度的array來得有彈性
 2. slice本身為一個引用型別，底層有指標指向一個array
 3. 重新切片指改變指標位址，底層陣列不變
 4. copy為另外建一個新的底層array
 2. 使用slice時建議事先使用make並規劃好容量cap，這樣在使用append時可以避免反覆重新分配記憶體
-{{% /notice %}}
+{{< /notice >}}
 
 
 

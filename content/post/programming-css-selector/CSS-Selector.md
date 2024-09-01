@@ -76,11 +76,11 @@ div {
 在用 webpack 等工具開發時，會合併 CSS 文件。如果 CSS 文件相互之間有依賴，可以直接用也只能用 @import 引入，最後構建好的文件會合併文件，不會出現 @import。
 
 
-{{% notice warning %}}
+{{< notice warning >}}
 建議使用 `<link>` 方式引入， HTML 及 CSS 檔案彼此獨立，可以針對單一的需求做修改而不影響另一個，且
 1. CSS 檔案加載與 HTML 檔案同時，網頁效能較佳。
 2. 載入 javascript 進行 DOM 操作只能使用 link 導入
-{{% /notice %}}
+{{< /notice >}}
 
 ---------------------
 
@@ -148,9 +148,9 @@ div {
 ```
 <br>
 
-{{% notice info %}}
+{{< notice info >}}
 至於何時要用 ID 、何時要用 Class，並沒有絕對的規則。但是大多的時候，Class 選擇器的使用頻率較高，因為較靈活，目的為了將幾個元素從其他元素中獨立出來做改動。但是當你要用 Javascript 的 GetElementByID 函數時，你就應該要用 ID 選擇器，因為ID 選擇器可以被 Javascript 中的 GetElementByID 函數所運用。
-{{% /notice %}}
+{{< /notice >}}
 
 ### 同時符合
 把 selector 連在一起，可以表示同時符合多種條件的選擇器。
@@ -324,10 +324,10 @@ div:hover {
 ```
 更多偽類別請參考：[Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
 
-{{% notice info %}}
+{{< notice info >}}
 補充  
 因為 Pseudo-classes 通常都需要使用者觸發才會有樣式的變化，會較難 debug。下面展示了如何使用開發人員工具讓我們不須使用滑鼠也能測試 Pseudo-classes。
-{{% /notice %}}
+{{< /notice >}}
 
 ![](https://imgur.com/ZiWXe25.png)
 
@@ -398,9 +398,9 @@ div:hover {
 
 權重大小(可以想成愈詳細的愈贏)
 
-{{% notice warning %}}
+{{< notice warning >}}
 !important > inline style > ID > Class/psuedo-class(偽類)/attribute（屬性選擇器） > Element
-{{% /notice %}}
+{{< /notice >}}
 
 ### !important
 !important 的權重最高，可以蓋過所有的權重，建議不要隨便使用。

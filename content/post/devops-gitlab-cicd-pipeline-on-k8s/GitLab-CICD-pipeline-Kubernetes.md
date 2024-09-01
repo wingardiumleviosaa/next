@@ -96,9 +96,9 @@ build-image:
 
 ![](https://imgur.com/lJzTfk9.png)
 
-{{% notice info %}}
+{{< notice info >}}
 其實執行到這步驟，設定的 Git Lab CI 檔已經可以正常運作了！這個錯誤訊息已經是 docker build image 階段的錯誤了，意即 Dockerfile 沒寫好，不過順便還是在這篇文章記錄一下。
-{{% /notice %}}
+{{< /notice >}}
 
 在 go build 的過程中如果有 import 從 git repo 上的第三方程式包的話，則需要在 go build 環境中有 `git`。只要在 Dockerfile 中加上 `RUN apk add --no-cache git` 即可解決。
 

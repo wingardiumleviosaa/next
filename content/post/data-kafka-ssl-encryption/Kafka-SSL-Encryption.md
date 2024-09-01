@@ -30,11 +30,11 @@ $ keytool -keystore broker1.keystore.jks \
 
 在其他 broker 以及 clinet 端重複以上動作。
 
-{{% notice info %}}
+{{< notice info >}}
 證書相當於一個 ID，來表明自己是誰（區分不同的服務器）。此時，這個證書還沒有被任何 CA（Certificate Authority，證書頒發機構）所認證（進行簽名）。證書可以通過下面兩種方式簽名： 
 - 先自己生成一個證書，再讓 CA 簽名。(此篇將採用的方法)
 - 直接從 CA 申請一個。
-{{% /notice %}}
+{{< /notice >}}
 
 ---------------------------------------
 
@@ -56,16 +56,16 @@ keytool -keystore ca.truststore.jks -alias CARoot -import -file ca-cert
 ```
 並將這一個 truststore 傳送到叢集的所有機器中以確保：
 
-{{% notice warning %}}
+{{< notice warning >}}
 當 client 與 broker 溝通時，client 只要檢查 broker 端的證書，確認該證書是由自己擁有的 truststore 中的 CA 頒發的，就認為此 broker 是可信的。
 同理，當 broker 與 client 交互時，broker 只要檢查 client 端證書，確認該證書是由自己所有的 truststore 中的 CA 頒發的，就認為客戶端是可信的。
-{{% /notice %}}
+{{< /notice >}}
 
-{{% notice info %}}
+{{< notice info >}}
 如果用不同的 CA 簽署證書，那麼就要將對象端的證書，或者該 CA，加入到本地端的 truststore 中。
 這裡有一個信任鏈的關係：可以信任某一個實例的證書；也可以信任證書的頒發機構，即 CA，當信任 CA 時，就會信任所有由該 CA 頒發的證書。
 **因此，在內部使用的叢集中，所有的伺服器只要信任同一個 CA，使用同一個truststore 就可以了（那麼所有持有由該 CA 簽名的證書的服務器就都是可信的了）。**
-{{% /notice %}}
+{{< /notice >}}
 
 
 <font color=carol>將 CA 以及 ca.truststore.jks 複製到其他 broker 以及 clinet 端，使其共用同一把 CA。</font>

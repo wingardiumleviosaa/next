@@ -35,10 +35,10 @@ markup:
     lineAnchors: ""
     lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: false
+    lineNumbersInTable: true
     noClasses: true
     noHl: false
-    style: monokai
+    style: emacs
     tabWidth: 2
   tableOfContents:
     # 开始/结束标题级别：1-6 (建议从2开始)
@@ -147,7 +147,7 @@ params:
 
   # 开启暗模式
   # Dark Mode
-  darkmode: true
+  darkmode: false
 
 
   # 站点基本信息
@@ -1022,7 +1022,7 @@ params:
   # Use Animate.css to animate everything.
   # For more information: https://animate.style
   motion:
-    enable: true
+    enable: false
     async: true
     transition:
       # All available transition variants: https://theme-next.js.org/animate/

@@ -96,11 +96,11 @@ alter system set db_recovery_file_dest = '/u01/app/oracle/oradata/recovery_area'
 - /u01/app/oracle/oradata/recovery_area 為日誌存儲路徑，須確保路徑提前創建。
 
 4. 開啟日誌歸檔。
-{{% notice info %}}
+{{< notice info >}}
 須知：
 開啟日誌歸檔功能需重啟數據庫，重啟期間將導致業務中斷，請謹慎操作。
 歸檔日誌會佔用較多的磁盤空間，若磁盤空間滿了會影響業務，請定期清理過期歸檔日誌。
-{{% /notice %}}
+{{< /notice >}}
 </br>
 
 ```sql

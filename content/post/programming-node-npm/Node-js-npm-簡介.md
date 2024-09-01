@@ -45,9 +45,9 @@ $ npm install left-pad --save-dev //自動記錄在 devDependencies 區域．僅
 
 </br>
 
-{{% notice warning %}}
+{{< notice warning >}}
 現在新版的 npm 不用加 --save 參數也會自動 save 到 package.json 了。
-{{% /notice %}}
+{{< /notice >}}
 
 ----
 

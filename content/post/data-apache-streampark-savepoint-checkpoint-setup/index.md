@@ -46,9 +46,9 @@ slug: data-apache-streampark-savepoint-checkpoint-setup
     
     替換 S3 bucket paths, access key, secret key, and endpoint。
     
-{{% notice note %}}
+{{< notice note >}}
 ✅ The `-Ds3.path.style.access=true` is crucial for compatibility with S3-like storage solutions that require path-style access, such as Minio or Ceph.
-{{% /notice %}}
+{{< /notice >}}
     
 
 ## 結果

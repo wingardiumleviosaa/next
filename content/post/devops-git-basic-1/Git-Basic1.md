@@ -78,9 +78,9 @@ git 就是個幫你做版控的程式，不用像上面那樣做很多動作！
 
 此時可以下 `$ git add .` 並下 `$ git commit -m "msg"`。或是直接下 **`$ git commit -am "msg"`** 將兩個指令合併。 `-a` 參數表示 `--all` (git add --all)，會把 <span class="dotunderletter">已修改過</span> 的檔案加入 staged 區。  
 
-{{% notice warning %}}
+{{< notice warning >}}
 請注意，使用git commit -am 不會包含新增的檔案 newfile，需要先 git add 再 git commit 個別下。
-{{% /notice %}}
+{{< /notice >}}
 
 p.s. git add 後檔案狀態會變成 <font color=green>Changes to be commited (Modified)</font>  
 
